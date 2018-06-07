@@ -11,6 +11,9 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use('/api', apiRouter);
 
+app.get('x', function (req, res) {
+    res.send('Hello world from Node.js and Nginx')
+})
 
 const PORT = 3091;
 
