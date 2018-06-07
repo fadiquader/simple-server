@@ -15,7 +15,7 @@ app.get('x', function (req, res) {
     res.send('Hello world from Node.js and Nginx')
 })
 
-const PORT = 3091;
+const PORT = 3001;
 
 app.listen(PORT, function (err) {
     if(err) throw err
